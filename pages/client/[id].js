@@ -1,32 +1,32 @@
 export default function Client({ client }){
-  return <div className="flex flex-col gap-2 m-5">
+  return <div className="flex flex-col gap-3 m-5">
     <h1 className="text-4xl">{client.name}</h1>
     <h2 className="text-2xl text-pink-500">Contact Information</h2>
     <dl>
       <dt className="font-semibold text-md">Email</dt>
-      <dd className="text-sm">{client.email}</dd>
+      <dd className="mb-2 text-sm">{client.email}</dd>
       <dt className="font-semibold text-md">Phone</dt>
-      <dd className="text-sm">{client.phone}</dd>
+      <dd className="mb-2 text-sm">{client.phone}</dd>
       <dt className="font-semibold text-md">Website</dt>
-      <dd className="text-sm">{client.website}</dd>
+      <dd className="mb-2 text-sm">{client.website}</dd>
     </dl>
     <h2 className="text-2xl text-pink-500">Address</h2>
     <dl>
       <dt className="font-semibold text-md">Street</dt>
-      <dd className="text-sm">{client.address.street}</dd>
+      <dd className="mb-2 text-sm">{client.address.street}</dd>
       <dt className="font-semibold text-md">Suite</dt>
-      <dd className="text-sm">{client.address.suite}</dd>
+      <dd className="mb-2 text-sm">{client.address.suite}</dd>
       <dt className="font-semibold text-md">City</dt>
-      <dd className="text-sm">{client.address.city}</dd>
+      <dd className="mb-2 text-sm">{client.address.city}</dd>
     </dl>
     <h2 className="text-2xl text-pink-500">Company</h2>
     <dl>
       <dt className="font-semibold text-md">Name</dt>
-      <dd className="text-sm">{client.company.name}</dd>
+      <dd className="mb-2 text-sm">{client.company.name}</dd>
       <dt className="font-semibold text-md">Catch Phrase</dt>
-      <dd className="text-sm">{client.company.catchPhrase}</dd>
+      <dd className="mb-2 text-sm">{client.company.catchPhrase}</dd>
       <dt className="font-semibold text-md">Mandate</dt>
-      <dd className="text-sm">{client.company.bs}</dd>
+      <dd className="mb-2 text-sm">{client.company.bs}</dd>
     </dl>
   </div>
 }
