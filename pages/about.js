@@ -1,7 +1,12 @@
+import Head from "next/head"
+
 export default function About(){
   return <>
-    <h1 className='mb-5 text-4xl'>About</h1>
-    <div>
+    <Head>
+      <title>About</title>
+    </Head>
+    <div className="max-w-4xl mx-auto">
+      <h1 className='mb-5 text-4xl'>About</h1>
       <p className="mb-2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet placerat fringilla. Donec non consequat sapien. Etiam in viverra mauris. Phasellus at turpis ante. Maecenas a lectus et est volutpat elementum. Aliquam erat volutpat. Nullam elit arcu, congue in nunc vel, finibus laoreet velit. Fusce vitae lorem consequat, sollicitudin ante at, sodales libero. Vestibulum in blandit nibh.
       </p>
