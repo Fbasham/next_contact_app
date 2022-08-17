@@ -5,7 +5,7 @@ import { AiOutlineMail, AiOutlinePhone, AiOutlineUser } from 'react-icons/ai'
 export default function Card({client,image}){
   return <div className="flex items-center justify-between px-4 py-2 text-white duration-200 rounded-lg shadow-lg cursor-pointer bg-slate-500 hover:bg-slate-700">
     <div>
-      <Link href={`http://localhost:3000/client/${client.id}`}>
+      <Link href={`/client/${client.id}`}>
         <a className='flex flex-col gap-1 p-1'>
           <div className='flex items-center gap-2 text-sm'>
             <AiOutlineUser />
